@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PST | Enkel visning</title>
+    <link rel="shortcut icon" href="https://www.pst.no/public/img/logo_print.png" type="img/png"/>
+    <link href="styles/normalize.css" rel="stylesheet" type="text/css">
+    <link href="styles/banner.css" rel="stylesheet" type="text/css">
+    <link href="styles/global.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="global-header">
+        <a href="page1.html" title="Gå hjem"><img src="https://www.pst.no/public/img/logo_print.png" alt="PST logo"></a>
+        <a href="page2.html">
+            <button class="details">Detaljert visning</button>
+        </a>
+    </header>
+    <aside class="banner">
+        <div id="sky"></div>
+        <div id="sun"></div>
+        <div id="road">
+            <div id="line"></div>
+        </div>
+        <div class="police-car" id="police1">
+            <div class="car-light"><img
+                    src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Frs140.pbsrc.com%2Falbums%2Fr14%2Fmissnry%2Fsiren.gif~c200&f=1&nofb=1"
+                    alt="politisirene"></div>
+            <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fclipart-library.com%2Fimg1%2F1022359.png&f=1&nofb=1"
+                alt="politibil">
+        </div>
+
+        <div class="police-car" id="police2">
+            <div class="car-light"><img
+                    src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Frs140.pbsrc.com%2Falbums%2Fr14%2Fmissnry%2Fsiren.gif~c200&f=1&nofb=1"
+                    alt="politisirene"></div>
+            <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fclipart-library.com%2Fimg1%2F1022359.png&f=1&nofb=1"
+                alt="politibil">
+        </div>
+
+        <div class="police-car" id="police3">
+            <div class="car-light"><img
+                    src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Frs140.pbsrc.com%2Falbums%2Fr14%2Fmissnry%2Fsiren.gif~c200&f=1&nofb=1"
+                    alt="politisirene"></div>
+            <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fclipart-library.com%2Fimg1%2F1022359.png&f=1&nofb=1"
+                alt="politibil">
+        </div>
+    </aside>
+    <main class="cases-container">
+        <header id="cases-header">
+            <h2>Alle saker i databasen</h2>
+            <a href="page2.html">Skal du lage en sak? Gå i detaljert visning</a>
+            <section class="filters">
+                <select class="select-officer">
+                    <option value="Betjente" disabled selected>Betjente</option>
+                </select>
+                <select class="select-type">
+                    <option value="Type sak" disabled selected>Type sak</option>
+                </select>
+            </section>
+        </header>
+
+        <section class="cases"></section>
+    </main>
+
+    <footer>
+        <a href="page1.html"><img src="https://www.pst.no/public/img/logo_print.png" alt="PST logo"></a>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="script/animation.js"></script>
+    <script src="script/divMaking.js"></script>
+    <script src="script/cases.js"></script>
+    <script src="script/filter.js"></script>
+</body>
+
+</html>

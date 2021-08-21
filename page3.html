@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PST | Endre sak</title>
+    <link rel="shortcut icon" href="https://www.pst.no/public/img/logo_print.png" type="img/png"/>
+    <link href="styles/normalize.css" rel="stylesheet" type="text/css">
+    <link href="styles/global.css" rel="stylesheet" type="text/css">
+    <link href="styles/form.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="global-header">
+        <a href="page1.html" title="Gå hjem"><img src="https://www.pst.no/public/img/logo_print.png" alt="PST logo"></a>
+    </header>
+    <main>
+        <form class="new-case-form">
+            <h2>Endre sak</h2>
+            <section class="input">
+                <label>Endre tittel</label>
+                <input type="text" class="input-title" placeholder="Tittel">
+            </section>
+            <section class="input">
+                <label>Endre type</label>
+                <select class="select-type">
+                    <option value="Type sak" disabled selected>Type sak</option>
+                </select>
+            </section>
+            <section class="input">
+                <label>Endre beskrivelsen av saken</label>
+                <textarea class="input-description" placeholder="Beskrivelse"></textarea>
+            </section>
+            <section class="input">
+                <label>Endre sakens åsted</label>
+                <input class="input-place" placeholder="Sted [bindestrek istedenfor mellomrom]"></input>
+            </section>
+
+            <section class="input">
+                <label>Endre liten over mistenkte</label>
+                <input class="input-suspects" placeholder="Personer [separert med komma]"></input>
+            </section>
+            <section class="input">
+                <label>Endre betjente på saken</label>
+                <select class="select-officer">
+                    <option value="Betjente" disabled selected>Betjente</option>
+                </select>
+            </section>
+            <button type="submit">Oppdater sak</button>
+        </form>
+    </main>
+    <footer>
+        <a href="page1.html"><img src="https://www.pst.no/public/img/logo_print.png" alt="PST logo"></a>
+    </footer>
+    <script src="script/divMaking.js"></script>
+    <script src="script/cases.js"></script>
+    <script src="script/editCase.js"></script>
+</body>
+
+</html>

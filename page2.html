@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PST | Detaljert visning</title>
+    <link rel="shortcut icon" href="https://www.pst.no/public/img/logo_print.png" type="img/png"/>
+    <link href="styles/normalize.css" rel="stylesheet" type="text/css">
+    <link href="styles/global.css" rel="stylesheet" type="text/css">
+    <link href="styles/form.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="global-header">
+        <a href="page1.html" title="Gå hjem"><img src="https://www.pst.no/public/img/logo_print.png" alt="PST logo"></a>
+        <a href="page1.html">
+            <button class="details">Enkel visning</button>
+        </a>
+    </header>
+    <main class="page2">
+        <form class="new-case-form">
+            <h2>Lag ny sak</h2>
+            <section class="input">
+                <label>Tittel på saken <i>(Påkrevd felt)</i></label>
+                <input type="text" class="input-title" placeholder="Tittel" required>
+            </section>
+            <section class="input">
+                <label>Velg type <i>(Påkrevd felt)</i></label>
+                <select class="select-type" required>
+                    <option value="Type sak" disabled selected>Type sak</option>
+                </select>
+            </section>
+            <section class="input">
+                <label>Beskriv saken</label>
+                <textarea class="input-description" placeholder="Beskrivelse"></textarea>
+            </section>
+            <section class="input">
+                <label>Legg til sted</label>
+                <input class="input-place" placeholder="Sted [bindestrek istedenfor mellomrom]"></input>
+            </section>
+
+            <section class="input">
+                <label>Legg til personer som utforskes</label>
+                <input class="input-suspects" placeholder="Personer [separert med komma]"></input>
+            </section>
+            <section class="input">
+                <label>Velg betjent på saken <i>(Påkrevd felt)</i></label>
+                <select class="select-officer">
+                    <option value="Betjente" disabled selected>Betjente</option>
+                </select>
+            </section>
+            <button class="make-case" type="submit">Lag sak</button>
+        </form>
+        <section class="wrapper">
+        <header id="cases-header">
+            <h2>Alle saker</h2>
+            <section class="filters">
+                <select class="select-officer">
+                    <option value="Betjente" disabled selected>Betjente</option>
+                </select>
+                <select class="select-type">
+                    <option value="Type sak" disabled selected>Type sak</option>
+                </select>
+            </section>
+        </header>
+
+        <section class="cases"></section>
+    </section>
+    </main>
+    </main>
+    <footer>
+            <a href="page1.html"><img src="https://www.pst.no/public/img/logo_print.png" alt="PST logo"></a>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="script/divMaking.js"></script>
+    <script src="script/cases.js"></script>
+    <script src="script/filter.js"></script>
+    <script>
+    let articlesOnPage = document.querySelectorAll(".case");
+    for(let i = 0; i < articlesOnPage.length; i++) {
+        articlesOnPage[i].toggleAttribute("open")
+    }
+    </script>
+</body>
+
+</html>

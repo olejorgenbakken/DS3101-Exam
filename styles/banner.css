@@ -1,0 +1,100 @@
+.banner {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, rgb(126, 126, 240), rgb(255, 83, 121));
+    color: white;
+    z-index: -2;
+}
+
+.banner h4 {
+    margin-top: 30px;
+}
+
+#sky {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgb(55, 103, 207), rgb(241, 236, 205));
+    z-index: 0;
+}
+
+#sun {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    background: yellow;
+    box-shadow: 0px 0px 5px gold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sun p {
+    color: black;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+#road {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, grey, lightgrey);
+}
+
+#line {
+    position: absolute;
+    bottom: 2px;
+    background: yellow;
+    width: 100%;
+    height: .5px;
+}
+
+.police-car {
+    position: absolute;
+    width: 140px;
+    left: -140px;
+    z-index: 2;
+    bottom: -10px;
+}
+
+#police1 {
+    left: -100px;
+}
+
+#police2 {
+    left: -10px;
+}
+
+#police3 {
+    left: -1100px;
+}
+
+.car-light {
+    position: relative;
+    left: 51px;
+    top: 41px;
+    width: 20px;
+}
+
+img {
+    max-width: 100%;
+}

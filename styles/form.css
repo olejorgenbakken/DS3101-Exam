@@ -1,0 +1,35 @@
+.new-case-form {
+    position: relative;
+    padding: 10px;
+    border: 1px solid black;
+    height: min-content;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.new-case-form section {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20px 0;
+}
+
+.new-case-form section label {
+    margin-bottom: 4px;
+    font-weight: 700;
+}
+
+.new-case-form textarea {
+    min-height: 40px;
+    max-height: 300px;
+    resize: vertical;
+}
+
+.new-case-form section *:last-child {
+    padding: 3px 0;
+}
+
+.new-case-form button {
+    width: 100%;
+    margin: 10px 0 3px 0;
+}
